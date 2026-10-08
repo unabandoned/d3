@@ -1,0 +1,29 @@
+schema: 1
+
+package: "@unabandoned/d3"
+
+upstream:
+  repo: d3/d3
+  reason: "no release since 7.9.0 in 2024-03; the thirty d3-* modules it re-exports are mostly unreleased since 2021-2023"
+
+summary: >-
+  D3 (Data-Driven Documents): scales, axes, shapes, colour interpolation,
+  selections and the rest of the d3-* modules, re-exported as one package.
+
+why-forked: >-
+  CyberChef imports d3 at runtime for its chart operations. Upstream d3 pulls
+  in a 37-package runtime tree (30 d3-* modules plus internmap, delaunator,
+  robust-predicates and d3-dsv's CLI deps commander, iconv-lite, rw and
+  safer-buffer), 33 of them abandoned. Forking every module is out of
+  proportion, so this fork publishes a self-contained rollup bundle with zero
+  runtime dependencies: the modules are devDependencies, Renovate keeps them
+  current, and a bump of any bundled module is typed build(deps) so it
+  releases.
+
+status: active
+
+used-by:
+  - consumer: TheTechNetwork/CyberChef
+    purpose: "chart operations (Entropy, Heatmap chart, Hex density chart, Scatter chart, Series chart)"
+
+tags: [visualization, charts, svg, bundled]

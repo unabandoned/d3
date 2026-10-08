@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>unabandoned/renovate-config"
+  ],
+  "forkProcessing": "enabled",
+  "packageRules": [
+    {
+      "description": "This fork publishes a rollup bundle that inlines the thirty d3-* modules and their own dependencies, so they are devDependencies here but they ARE the shipped code: a bump changes what consumers execute. Renovate types devDependency bumps chore(deps), which release-please hides and never releases; type these build(deps) instead - a visible, releasing section - so a bump of bundled code always reaches a published version. Other devDependencies (rollup, commitlint) stay chore.",
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "matchPackageNames": [
+        "/^d3-/",
+        "delaunator",
+        "internmap",
+        "robust-predicates"
+      ],
+      "semanticCommitType": "build"
+    }
+  ]
+}
