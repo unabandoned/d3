@@ -1,3 +1,4 @@
+import {test as it} from "node:test";
 import assert from "assert";
 import {readdir, readFile, stat} from "fs/promises";
 
