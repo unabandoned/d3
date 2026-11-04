@@ -78,7 +78,7 @@
     "delaunator": "5.1.0",
     "internmap": "2.0.3",
     "robust-predicates": "3.0.3",
-    "rollup": "4.67.3"
+    "rollup": "4.67.4"
   },
   "scripts": {
     "build": "rm -rf dist && rollup -c",
