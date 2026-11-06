@@ -1,5 +1,17 @@
 # Changelog
 
+## [7.10.1](https://github.com/unabandoned/d3/compare/d3-v7.10.0...d3-v7.10.1) (2026-11-06)
+
+
+### Dependencies & maintenance
+
+* **deps:** update dependency d3-array to v3.2.5 ([#11](https://github.com/unabandoned/d3/issues/11)) ([a9924ad](https://github.com/unabandoned/d3/commit/a9924adbfc8edfe1e3db02f141f69726f5646fea))
+* **deps:** update dependency d3-axis to v3.0.1 ([#14](https://github.com/unabandoned/d3/issues/14)) ([93f8f22](https://github.com/unabandoned/d3/commit/93f8f22f0052d845df72f7b9ef39c8f12da03817))
+* **deps:** update dependency d3-brush to v3.0.1 ([#15](https://github.com/unabandoned/d3/issues/15)) ([b355b86](https://github.com/unabandoned/d3/commit/b355b86581b1db705b25425d21c3950741746e29))
+* **deps:** update dependency d3-chord to v3.0.2 ([#16](https://github.com/unabandoned/d3/issues/16)) ([39ec59f](https://github.com/unabandoned/d3/commit/39ec59f8c840c4caeffc76a6f0dbe940ed7dbfdf))
+* **deps:** update dependency d3-color to v3.1.1 ([#12](https://github.com/unabandoned/d3/issues/12)) ([6523f37](https://github.com/unabandoned/d3/commit/6523f3735582927289883858760ca1a715bd5321))
+* **deps:** update dependency d3-contour to v4.0.3 ([#17](https://github.com/unabandoned/d3/issues/17)) ([3721600](https://github.com/unabandoned/d3/commit/3721600c9077fb53a38a1438761cf884d413067c))
+
 ## [7.10.0](https://github.com/unabandoned/d3/compare/d3-v7.9.0...d3-v7.10.0) (2026-10-08)
 
 
