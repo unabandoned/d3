@@ -6,6 +6,15 @@ upstream:
   repo: d3/d3
   reason: "no release since 7.9.0 in 2024-03; the thirty d3-* modules it re-exports are mostly unreleased since 2021-2023"
 
+  # Upstream commits looked at, so the drift report stops re-reporting them and
+  # a genuinely new commit stands out.
+  reviewed:
+    - sha: 3d1a90c3
+      decision: ported
+      note: >-
+        fixes the Bruls et al. paper link in docs/d3-hierarchy/treemap.md (the
+        old www.win.tue.nl/~vanwijk path now 301s); cherry-picked unchanged
+
 summary: >-
   D3 (Data-Driven Documents): scales, axes, shapes, colour interpolation,
   selections and the rest of the d3-* modules, re-exported as one package.
