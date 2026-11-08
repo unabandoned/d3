@@ -11,4 +11,4 @@ jobs:
       actions: read
       contents: read
       security-events: write
-    uses: unabandoned/.github/.github/workflows/reusable-codeql.yml@7df8c67cf681d8fc7ee0831d74c1e9d8640b12a9 # v1.3.4
+    uses: unabandoned/.github/.github/workflows/reusable-codeql.yml@6351221a594b8327d4e73b0cd9e2c798189616d2 # v1.3.5
