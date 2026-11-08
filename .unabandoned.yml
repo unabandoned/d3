@@ -14,6 +14,22 @@ upstream:
       note: >-
         fixes the Bruls et al. paper link in docs/d3-hierarchy/treemap.md (the
         old www.win.tue.nl/~vanwijk path now 301s); cherry-picked unchanged
+    - sha: 78db4998
+      decision: declined
+      note: >-
+        upstream's 7.9.1 release: it moves to pnpm, vitest and eslint 10, edits
+        workflows this fork does not have, and raises d3-* ranges that our
+        pinned devDependencies already meet; its rollup config externalises
+        d3-* in the ES builds, the opposite of this fork's zero-dependency
+        bundle, and its gallery.data.js change is for a docs build we do not run
+    - sha: 374c4b32
+      decision: declined
+      note: "edits docs/.vitepress/config.ts for upstream's docs site build; this fork builds no docs site"
+    - sha: db118c93
+      decision: declined
+      note: >-
+        upstream's 7.9.2 version bump and d3-delaunay ^6.0.6; our devDependency
+        is already pinned at 6.0.6, and versions here come from release-please
 
 summary: >-
   D3 (Data-Driven Documents): scales, axes, shapes, colour interpolation,
